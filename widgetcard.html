@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="widget">
+        <div class="heaader">
+            <h3><strong>📈 Key Indicators</strong></h3>
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('users')" >Users</button>
+                <button class="tab-btn" onclick="showTab('companies')">Companies</button>
+                <button class="tab-btn" onclick = "showTab('sales')">Sales</button>
+            </div>
+        </div>
+        <div class="content" id="users">
+            <div class="details">
+                <img src="./assets/image2.jpg" alt="profile image">
+                <div class="info">
+                    <p>BEST USER</p>
+                    <p>Jane Taylor</p>
+                    <p>SPENT</p>
+                    <p>1.1K$</p>
+                </div>
+            </div>
+            <div class="user-list">
+                <div class="card-header">
+                    <p>NEW USERS</p>
+                    <span class="percentage"> 📉8.35%</span>
+                </div>
+                <h1>3,7K</h1>
+            
+            <div class="list">
+                <img src="./assets/image1.jpg" alt="profile image">
+                <img src="./assets/image2.jpg" alt="profile image">
+                <img src="./assets/image3.jpg" alt="profile image">
+                <button class="learn">Learn More</button>
+            </div>
+            </div>
+            <p>There is a <strong>15% improvement opportunity </strong>in your ad campaign to boost the amount of new users</p>
+        </div>
+        <div class="content hidden" id="companies">
+            <div class="details">
+                <img src="./assets/company1.jpg" alt="company image">
+                <div class="info">
+                    <p>BEST COMPANY</p>
+                    <p><strong>Tesala Inc</strong></p>
+                    <p>SPENT</p>
+                    <p>2.5$</p>
+                </div>
+            </div>
+            <div class="user-list">
+                <div class="card-header">
+                    <p>NEW COMPANIES</p>
+                    <span class="percentage"> 📈 5.35%</span>
+                </div>
+                <h1>523</h1>
+                <div class="list">
+                    <img src="./assets/company1.jpg" alt="company profile">
+                    <img src="./assets/company2.jpg" alt="company profile">
+                    <img src="./assets/company3.jpg" alt="company profile">
+                    <button class="learn">Learn More</button>
+                </div>
+            </div>
+            <p>There is a <strong>10% improvement opportunity </strong> in your online presense to boost your new companies acquired next month</p>
+        </div>
+        <div class="content hidden" id="sales">
+            <div class="feautures">
+                <div class="item">
+                    <h3>DIGITAL SALES</h3>
+                    <p>📈 789k$<span class="green">(5.35%)</span></p>
+                </div>
+                <div class="item">
+                    <h3>PHYSICAL SALES</h3>
+                    <p>📉278k$<span class="red">(-3.35%)</span></p>
+                </div>
+                <div class="item">
+                    <h3>REVENUE</h3>
+                    <p> 📈 1067k$<span class="green">(3.35%)</span></p>
+                </div>
+                <div class="item">
+                    <h3>PROFIT MARGIN</h3>
+                    <p>📉13.76k$<span class="green">(2.35%)</span></p>
+                </div>
+                <div class="item">
+                    <h3>EARINGS</h3>
+                    <p>📈 212k$<span class="green">(12.35%)</span></p>
+                </div>
+                <div class="item">
+                    <h3>CLV</h3>
+                    <p>📉1595k$<span class="red">(-5.35%)</span></p>
+                </div>
+            </div>
+            <p>There is <strong>20% improvement opportunity</strong> in your sales stratagy to boost your total sales indicator.</p>
+        </div>
+    </div>
+    <script src="widget.js"></script>
+     
+</body>
+</html>
